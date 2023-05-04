@@ -1,0 +1,139 @@
+<?php
+session_start();
+if (!isset($_SESSION['loggedin']) !== true) {
+    echo '<script>alert("log-in successfull!");</script>';
+}
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Hub</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/logo.png">
+</head>
+        <header>
+            <div id="navbar">
+                <div class="alignment">
+                    <div id="logo">
+                        <img src="images/logo.png" alt="cannot load">
+                    </div>
+                </div>
+                <ul>
+                    <li class="item"><a href="index.php">Home</a></li>
+                    <li class="item"><a href="men.html">Men</a></li>
+                    <li class="item"><a href="women.html">Women</a></li>
+                    <li class="item"><a href="kids.html">Kids</a></li>
+                    <li class="item"><a href="#contact-us">Contact Us</a></li>
+                </ul>
+                <div class=log>
+                    <div class=rightnav>
+                        <div class="login-profile">
+                            <a href="login.php">
+                                <img src="images/user.png" alt="no pic available" title="login">
+                            </a>
+                        </div>
+                        <div class="logout-profile">
+                            <a href=logout.php>
+                                <img src="images/logout.png" alt="no pic available" title="logout">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+        </header>
+        <div class="background">
+            <div class="section">
+                <h1>WELCOME TO FASHION HUB</h1>
+                <h2><span class="animate"></span></h2>
+            </div>
+        </div>
+        <div class="glow">
+            <ul>
+                <li>O</li>
+                <li>U</li>
+                <li>R &nbsp;</li>
+                <li>C</li>
+                <li>O</li>
+                <li>L</li>
+                <li>L</li>
+                <li>E</li>
+                <li>C</li>
+                <li>T</li>
+                <li>I</li>
+                <li>O</li>
+                <li>N</li>
+            </ul>
+        </div>
+        <div class="inaline">
+            <div class="card"><a href="men.html">
+                    <img src="images/b1.jpg" alt="not available" class="card_image">
+                    <div class="card_body">
+                        <h3 class="card_title">MEN</h3>
+                    </div>
+                </a>
+            </div>
+            <div class="card"><a href="women.html">
+                    <img src="images/b2.jpg" alt="not available" class="card_image">
+                    <div class="card_body">
+                        <h3 class="card_title">WOMEN</h3>
+                    </div>
+                </a>
+            </div>
+            <div class="card"><a href="kids.html">
+                    <img src="images/b3.jpg" alt="not available" class="card_image">
+                    <div class="card_body">
+                        <h3 class="card_title">KIDS</h3>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+        <a name="contact-us"></a>
+        <footer>
+            <div class="foooter">
+                <div class="col-1">
+                    <h4> LINKS </h4>
+                    <a href="men.html">Men</a>
+                    <a href="women.html">Women</a>
+                    <a href="kids.html">Kids</a>
+                </div>
+                <div class="col-2">
+                    <h4>CONTACT US</h4>
+                    <form>
+                        <input type="email" placeholder="your Email address" required><br>
+                        <button type="submit" onclick="alert('We will contact you shortly ');">Submit</button>
+                    </form>
+                </div>
+                <div class="col-3">
+                    <h3> FOLLOW US</h3>
+                    <div class="social-icon">
+                        <a href="https://www.instagram.com/" target="/">
+                            <img src="images/instagram.jpg" alt="" srcset="">
+                        </a>
+                        <a href="https://twitter.com/">
+                            <img src="images/twitter.jpg" alt="" srcset="">
+                        </a>
+                        <a href="https://www.facebook.com/">
+                            <img src="images/facebook.jpg" alt="" srcset="">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <h3> CALL US</h3>
+                    <div class="social-icon">
+                        7428061255
+                    </div>
+                </div>
+
+            </div>
+            <div class="row">
+                <hr>
+                <p> Copyright &copy; www.fashionhub.com. All rights reserved.</p>
+            </div>
+            </div>
+        </footer>
+    </body>
+
+    </html>
